@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.cashfxgroup.com/login by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Sep 2021 10:52:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CFXGroup - Login</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="login.html"/>
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="../cdn.theconversionpros.com/office/terabit/jquery.tf.css" type="text/css" rel="stylesheet">
+<link href="assets/fonts/montserrat/stylesheet.css" rel="stylesheet">
+<link href="assets/css/main.min8e5e.css?v=15" rel="stylesheet">
+
+<style>
+	.login .login-form{
+		position: relative;
+		max-width: 90%;
+		width: 486px;
+		top: 0;
+		left: 0;
+		transform: none;
+		background: #8abc57;
+		border-radius: 33px;
+		box-shadow: 0 10px 12px hsla(0, 0%, 100%, .2);
+	}
+
+</style>
+<!--<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">-->
+<!---->
+<!--<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">-->
+
+<!--<link rel="stylesheet" href="/assets/css/main.min.css">-->
+
+<!--<link href="/assets/css/custom-styles.css" rel="stylesheet">-->
+
+<!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+<!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+
+
+<!--<meta name="msapplication-TileColor" content="#ffffff">-->
+<!--<meta name="theme-color" content="#ffffff">-->
+
+<script>window.devicePixelRatio = 2;</script>
+<script>
+	var front = {
+		country_code: "NG"
+	};
+</script>
+
+	<link href="assets/css/bootstrap-pincode-input.css" rel="stylesheet">
+	<style>
+		.bootbox{
+			color: #212529;
+		}
+
+		.pincode-input-container input{
+			text-align: center;
+		}
+
+		/*.login .login-form input[type=password], .login .login-form input[type=text]{*/
+		/*	border: 1.5px solid #fff;*/
+		/*	background: transparent;*/
+		/*	border-radius: 33px;*/
+		/*	padding: 12px 30px;*/
+		/*	color: #fff;*/
+		/*	display: block;*/
+		/*	margin: auto auto 20px;*/
+		/*}*/
+
+		input.form-control.pincode-input-text:read-only{
+			background-color: #c3c3c3 !important;
+		}
+
+	</style>
+	<script>
+		var tf = {detectedCountry: 'NG'};
+	</script>
+</head>
+<body class="login  d-flex justify-content-center align-items-center container">
+<form id="login" class="login-form text-center">
+	<div class="logo"><a href="index.html"><img src="assets/img/cfx-silver-logo.png"></a></div>
+	<h3>Login</h3>
+	<p>Sign in to your account</p>
+	<input type="hidden" name="captcha" id="captcha"/>
+	<label for="username" class="hidden">Enter Username</label>
+	<input type="text" name="username" id="username" class="form-control" placeholder="Username">
+	<label for="password" class="hidden">Enter Username</label>
+	<input type="password" name="password" id="password" class="form-control" placeholder="Password">
+	<button type="submit"
+	        class="g-recaptcha btn btn-light"
+	        data-sitekey="6Lfc7MUUAAAAALo0lnPqeiOUBTeTdFPC3y2GNLi6"
+	        data-callback='onSubmit'
+	        data-error-callback="onRecaptchaError"
+	>Login
+	</button>
+	<!--		 For CN: GEETest captcha start-->
+	<div class="row">
+		<div class="col-12">
+			<style>
+				#embed-captcha{
+					width: 300px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 10px;
+				}
+
+				.show{
+					display: block;
+				}
+
+				.hide{
+					display: none;
+				}
+
+				#notice{
+					color: red;
+				}
+
+				#g-recaptcha > div{
+					margin: 0 auto;
+					margin-bottom: 10px;
+				}
+			</style>
+
+			<div id="embed-captcha"></div>
+					</div>
+	</div>
+	<!-- For CN: GEETest captcha END-->
+	<br>
+	<p><small style="display:block; margin-bottom: 20px"><a href="forgot-password.html">Forgot Password?</a></small>If you are having issues logging in,<br>
+		please <a href="contact.html">contact us here.</a></p>
+</form>
+
+
+<form id="google-auth" style="display: none" class="login-form text-center">
+	<style>
+		.login-form .pincode-input-container input[type=text]{
+			border: 1px solid black;
+			border-radius: 0;
+			padding: 0;
+			color: black;
+			width: 50px;
+			display: block;
+			margin: auto auto 20px;
+		}
+	</style>
+	<div class="logo"><img src="assets/img/cfx-silver-logo.png"></div>
+	<h3>Login</h3>
+	<p class="text-muted">Google authenticator pin</p>
+	<input type="text" name="" id="pincode-input"/>
+	<br/>
+	<p>Please enter your authenticator pin and wait up to 15 seconds for the system to confirm it.</p>
+<!--	<a href="/login" class="btn btn-link box-shadow-0 px-0">Login Page</a>-->
+</form>
+<!-- page End-->
+
+<script crossorigin src="../cdn.polyfill.io/v3/polyfill.min2b84.js?flags=gated&amp;?features=default,es5,es6,es7,fetch,Object.values,String.prototype.repeat"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<script src="assets/js/printf1ng3er2.js"></script>
+<script>if (window.requestIdleCallback) {
+		requestIdleCallback(function () {
+			Fingerprint2.get({excludes: {enumerateDevices: true, pixelRatio: true, plugins: true}}, function (components) {
+				//console.log(components);
+				var deviceDescription = '';
+				var values = components.map(function (component) {
+					if(component.key === 'userAgent'){
+						deviceDescription = deviceDescription + component.value;
+					}
+					return component.value;
+				});
+                var murmur = Fingerprint2.x64hash128(values.join(''), 31);
+    
+				window.df = {
+                	deviceHash: murmur,
+                	deviceDescription: deviceDescription,
+                	components: components
+                };
+        })
+    })
+} else {
+		setTimeout(function () {
+			Fingerprint2.get({excludes: {enumerateDevices: true, pixelRatio: true, plugins : true}}, function (components) {
+				console.log(components);
+
+				var deviceDescription = '';
+				var values = components.map(function (component) {
+					if(component.key === 'userAgent'){
+						deviceDescription = deviceDescription + component.value;
+					}
+					return component.value;
+				});
+                var murmur = Fingerprint2.x64hash128(values.join(''), 31);
+    
+				window.df = {
+                	deviceHash: murmur,
+                	deviceDescription: deviceDescription,
+                	components: components
+                };
+        })  
+    }, 500)
+}</script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="../stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js" type="text/javascript"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js" type="text/javascript"></script>
+<script src="../cdn.theconversionpros.com/office/terabit/jquery.tf8c65.js?v=2016-10-12" type="text/javascript"></script>
+<script src="assets/js/gt.js" type="text/javascript"></script>
+
+<script src="assets/js/bootstrap-pincode-input.js"></script>
+<script src="../www.google.com/recaptcha/api.js" async defer></script>
+<script>
+	var view = {};
+
+	$(document).ready(function() {
+		if(tf.detectedCountry == "CN"){
+			initGeeTestCaptcha();
+		}
+
+		function initGeeTestCaptcha() {
+			$.ajax({
+				url:      '/rpc/',
+				method:   'post',
+				dataType: 'json',
+				data:     {
+					method: 'startCaptchaServlet'
+				},
+				success:  function(data) {
+					initGeetest({
+						https:       true,
+						gt:          data.result.gt,
+						challenge:   data.result.challenge,
+						new_captcha: true,
+						offline:     false,
+						product:     "embed",
+					}, function(captchaObj) {
+						view.captchaObj = captchaObj;
+						$("#login_form_submit").click(function(e) {
+							var validate = captchaObj.getValidate();
+							if(!validate){
+								$("#notice")[0].className = "show";
+								setTimeout(function() {
+									$("#notice")[0].className = "hide";
+								}, 2000);
+								e.preventDefault();
+							}
+						});
+						captchaObj.onError(function(error) {
+							captchaObj.reset();
+						});
+						captchaObj.appendTo("#embed-captcha");
+						captchaObj.onReady(function() {
+							$("#wait")[0].className = "hide";
+						});
+						// more details：http://www.geetest.com/install/sections/idx-client-sdk.html
+					});
+				}
+			});
+		}
+
+		var isSubmitting = false;
+		var submitForm   = function(value, e, errorElement) {
+			isSubmitting = true;
+			var username = $('#username').val();
+			var password = $('#password').val();
+			var captcha  = $('#captcha').val();
+			console.log('submitForm');
+			var identifierType;
+			if(username.includes('@')){
+				identifierType = 'email'
+			}
+			else{
+				identifierType = 'username'
+			}
+			$('#google-auth input').prop('readonly', true)
+			$.ajax({
+				url:      '/rpc/',
+				method:   'post',
+				dataType: 'json',
+				data:     {
+					method: 'login',
+					params: {
+						identifier:             username,
+						password:               password,
+						identifierType:         identifierType,
+						'g-recaptcha-response': captcha,
+						pin:                    value,
+						clientTime:             (new Date()).getTime() / 1000,
+						deviceDescription:      window.df ? window.df.deviceDescription : '',
+						deviceHash:             window.df ? window.df.deviceHash : '',
+						//deviceComponents:       window.df ? window.df.components : ''
+					}
+				},
+				success:  function(data) {
+					if(data && data.result){
+						if(data.result === "2fa-required"){
+							$('#login').hide();
+							$('#google-auth').show();
+						}
+						else{
+							window.location.href = data.result.redirects[0];
+						}
+					}
+					else{
+						$.tf.rpcError(data);
+						grecaptcha.reset();
+						$('#pincode-input').pincodeInput().data('plugin_pincodeInput').clear();
+						$('#pincode-input').pincodeInput().data('plugin_pincodeInput').focus();
+						$('#google-auth input').prop('readonly', false)
+						isSubmitting = false;
+					}
+				},
+				complete: function() {
+					$('.btn-submit').attr('disabled', false).find('.fa-spinner').remove();
+					$('#google-auth input').prop('readonly', false)
+				}
+			});
+		};
+
+		$('#pincode-input').pincodeInput({
+			inputs:     6,
+			hidedigits: false,
+			complete:   function(value, e, error){
+				if(isSubmitting){
+					e.preventDefault();
+					return false;
+				}
+				else{
+					submitForm(value, e, error);
+				}
+			},
+			keydown:    function(e) {
+				//console.log(e);
+				if(e.ctrlKey && e.keyCode === 86){
+					var pasteData;
+					try{
+						if(navigator.clipboard){
+							navigator.clipboard.readText().then(function(text) {
+								submitForm(text);
+							});
+						}
+						else if(e.originalEvent !== undefined && e.originalEvent.clipboardData !== undefined){
+							pasteData = e.originalEvent.clipboardData.getData('Text'); // use this method in Chrome to get clipboard data.
+							submitForm(pasteData);
+						}
+						else if(e.clipboardData !== undefined){
+							pasteData = e.clipboardData.getData('Text'); // use this method in Chrome to get clipboard data.
+							submitForm(pasteData);
+						}
+						else if(window.clipboardData !== undefined){
+							pasteData = window.clipboardData.getData('Text'); // use this method in IE/Edge to get clipboard data.
+							submitForm(pasteData);
+						}
+						else{
+							console.log('no clipboard access detected');
+						}
+					} catch(e){
+						//console.log(e);
+					}
+				}
+			},
+		}).on('paste', function(e) {
+			var pasteData;
+			try{
+				if(e.originalEvent !== undefined && e.originalEvent.clipboardData !== undefined){
+					pasteData = e.originalEvent.clipboardData.getData('Text') // use this method in Chrome to get clipboard data.
+				}
+				else if(e.clipboardData !== undefined){
+					pasteData = e.clipboardData.getData('Text') // use this method in Chrome to get clipboard data.
+				}
+				else if(window.clipboardData !== undefined){
+					pasteData = window.clipboardData.getData('Text') // use this method in IE/Edge to get clipboard data.
+				}
+				else{
+					console.log('no clipboard access detected');
+				}
+			} catch(e){
+				return;
+			}
+			if(pasteData.length === 6){
+				submitForm(pasteData);
+			}
+		});
+
+		setTimeout(function() {
+			$('#google-auth input').on('paste', function(e) {
+				var pasteData;
+				try{
+					if(e.originalEvent !== undefined && e.originalEvent.clipboardData !== undefined){
+						pasteData = e.originalEvent.clipboardData.getData('Text') // use this method in Chrome to get clipboard data.
+					}
+					else if(e.clipboardData !== undefined){
+						pasteData = e.clipboardData.getData('Text') // use this method in Chrome to get clipboard data.
+					}
+					else if(window.clipboardData !== undefined){
+						pasteData = window.clipboardData.getData('Text') // use this method in IE/Edge to get clipboard data.
+					}
+					else{
+						console.log('no clipboard access detected');
+					}
+				} catch(e){
+					console.log(e);
+					return;
+				}
+				if(pasteData.length === 6){
+					submitForm(pasteData);
+
+				}
+			}).attr('useCapture', false);
+		}, 1000);
+	});
+
+	var request = $('#login').submit(function(event) {
+		event.preventDefault();
+		var form = event.target;
+		if(validateForm(form)){
+			var username = $('#username').val();
+			var password = $('#password').val();
+			var captcha  = $('#captcha').val();
+
+			var identifierType;
+			if(username.includes('@')){
+				identifierType = 'email'
+			}
+			else{
+				identifierType = 'username'
+			}
+
+			$('.btn-submit').attr('disabled', true).prepend('<i class="fa fa-spinner fa-spin" style="margin-right: .5rem"></i>');
+			$.ajax({
+				url:      '/rpc/',
+				method:   'post',
+				dataType: 'json',
+				data:     {
+					method: 'login',
+					params: {
+						identifier:             username,
+						password:               password,
+						identifierType:         identifierType,
+						'g-recaptcha-response': captcha,
+						geetest_challenge:      $("input[name='geetest_challenge']").val(),
+						geetest_validate:       $("input[name='geetest_validate']").val(),
+						geetest_seccode:        $("input[name='geetest_seccode']").val(),
+						IPCountry:              "NG",
+						clientTime:             (new Date()).getTime() / 1000,
+						deviceDescription:      window.df ? window.df.deviceDescription : '',
+						deviceHash:             window.df ? window.df.deviceHash : '',
+						//deviceComponents:       window.df ? window.df.components : ''
+					}
+				},
+				success:  function(data) {
+					if(data && data.result){
+						if(data.result === "2fa-required"){
+							$('#login').hide();
+							$('#google-auth').show();
+							setTimeout(function() {
+								$('#pincode-input').pincodeInput().data('plugin_pincodeInput').focus();
+							}, 100)
+						}
+						else{
+							window.location.href = data.result.redirects[0];
+						}
+					}
+					else{
+						$.tf.rpcError(data);
+						if(view.captchaObj){
+							view.captchaObj.reset();
+						}
+						else{
+							grecaptcha.reset();
+						}
+					}
+				},
+				complete: function() {
+					$('.btn-submit').attr('disabled', false).find('.fa-spinner').remove();
+				}
+			});
+		}
+
+	});
+
+	function validateForm(formElm) {
+		var systemMsg = [];
+		var isError   = false;
+
+		var username = formElm.username.value;
+		var password = formElm.password.value;
+		var captcha  = formElm.captcha.value;
+
+		if(username === ''){
+			isError = true;
+			systemMsg.push('Username or email cannot be empty.');
+		}
+		if(password === ''){
+			isError = true;
+			systemMsg.push('Password cannot be empty.');
+		}
+		// display error message if needed
+		if(!isError){
+			return true;
+		}
+		else if(systemMsg.length > 0){
+			bootbox.alert(systemMsg.join('<br>\n'));
+			grecaptcha.reset();
+		}
+		return false;
+	} // validateForm()
+
+	function onRecaptchaError(error) {
+		alert("Google Recaptcha  Network issue");
+		grecaptcha.reset();
+		window.location.reload();
+	}
+
+	function onSubmit(token) {
+		if(validateForm($('#login').get(0))){
+			$('#captcha').val(token);
+			$('#login').submit();
+		}
+	}
+
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from www.cashfxgroup.com/login by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Sep 2021 10:52:50 GMT -->
+</html>
