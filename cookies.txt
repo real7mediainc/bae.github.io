@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.cashfxgroup.com	TRUE	/	FALSE	1999999999	backoffice	uola1fcabuufmpl15oc2ebfcl2
+www.cashfxgroup.com	TRUE	/	FALSE	1999999999	src	unknown
+cdn.theconversionpros.com	TRUE	/	FALSE	1999999999	__cflb	02DiuGoAi34yq6pkdT47ZF2u13f2eQTuB32QNyQRB3c7E
+cdn.theconversionpros.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+
